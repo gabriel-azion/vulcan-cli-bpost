@@ -45,8 +45,79 @@ Then, an interactive journey is presented and you choose the template.
 
 ![list of available templates](templates-list.png)
 
-After the template is selected, each framework will present a specif set of steps.
+After the template is selected, each framework will present a specif set of steps. Say yes to run it locally and install the dependencies. 
 
-These web frameworks go through this adapting process, and the necessary configurations are applied, make them apt and optimal to run at the edge. 
+### Using polyfills 
 
-These process is carried by an open-source framework adapter called [Vulcan]()
+Vulcan makes it possible the use of polyfills, and in this example I'll present how to configure the project to levarage this feature. 
+
+**Case**: let's say you wish to initialize a JavaScript project and make use of Node.js Buffer API. To do so, it's necessary to inform vulcan the project implements polyfills.
+
+Vulcan reads a file called `vulcan.config.js`. This file must be created and the following properties must be informed: 
+
+```js
+module.exports = {
+    entry: 'main.js',
+    builder: 'webpack',
+    useNodePolyfills: true,
+  };
+```
+
+**entry**: represents the primary entry point for your application, where the building process begins. It's ignored for Jamstack solutions.
+**builder**: defines the build tool to use. It's either `esbuild` or `webpack`.
+**useNodePolyfills**: determines whether Node.js polyfills should be applied.
+
+After this settings are in place, you can simply import the necessary APIs inside the project. In this case, we're importing Node.js Buffer. 
+
+Inside main.js: 
+
+```js
+// Import the Buffer class from the 'buffer' module in Node.js
+import { Buffer } from 'node:buffer';
+
+// Define a function named 'myWorker' that takes an event as an argument
+export default function myWorker(event) {
+  // Create a new Buffer instance 'buf1' from the string "x"
+  var buf1 = Buffer.from("x");
+  // Create a new Buffer instance 'buf2' from the string "x"
+  var buf2 = Buffer.from("x");
+  // Compare 'buf1' and 'buf2' using Buffer.compare method
+  // This method returns a number indicating whether 'buf1' is equal to 'buf2'
+  var a = Buffer.compare(buf1, buf2);
+
+  // In this case, it'll return 0, because they're equal
+  console.log(a);
+
+  // Now, let's swap the values of 'buf1' and 'buf2'
+  buf1 = Buffer.from("y");
+  buf2 = Buffer.from("x");
+  // Compare 'buf1' and 'buf2' again
+  a = Buffer.compare(buf1, buf2);
+
+  // Here it returns 1
+  console.log(a);
+
+  // The function returns a new Response object with the string "Testing buffer polyfills"
+  return new Response("Testing polyfills");
+}
+```
+
+Now, you can run the project locally by using: 
+
+```bash 
+azion dev
+```
+
+**Output** 
+
+![azion dev output](azion-dev-output.png)
+
+You can now access the project locally.
+
+> It's necessary to be in the root of your project for the commands to run properly.
+
+The `azion dev` command takes the project to the **build process**, which is take over by vulcan.
+
+You can access the sample project used here on [Azion Samples](https://github.com/aziontech/azion-samples/tree/dev/samples/polyfills/buffer) repository on GitHub.
+
+
