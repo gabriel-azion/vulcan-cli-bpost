@@ -119,12 +119,12 @@ The sample project used in this example can be found in the [Azion Samples](http
 
 ### Process explained 
 
-1. The user initiates the process by running `azion` or `azion init` via the Azion CLI, and selects the desired template.
-2. The Azion CLI then invokes Vulcan, which takes charge of initializing the project.
+1. The user initiates the process by running `azion` or `azion init` via Azion CLI, and selects the desired template.
+2. Azion CLI then invokes Vulcan, which takes charge of initializing the project.
 3. Once initialized, Vulcan hands the project back to the user, who then decides whether to deploy the project or run it locally.
 4. If the user opts to run the project locally, Vulcan triggers the build process and generates the worker.
-5. If the user decides to deploy the project, they run the `azion deploy` command. This initiates the build process again, after which the Azion CLI creates an edge application and deploys it onto Azion's distributed edge network.
-6. Upon successful deployment, the Azion CLI provides the domain of the application. After a brief waiting period, the application becomes accessible.
+5. If the user decides to deploy the project, they run the `azion deploy` command. This initiates the build process again, after which Azion CLI creates an edge application and deploys it onto Azion's distributed edge network.
+6. Upon successful deployment, Azion CLI provides the domain of the application. After a brief waiting period, the application becomes accessible.
 
 ### Responsibilities 
 
