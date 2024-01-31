@@ -43,7 +43,7 @@ azion
 
 Then, an interactive journey is presented and you choose the template.
 
-![list of available templates](template-list.png)
+![list of available templates](templates-list.png)
 
 After the template is selected, each framework will present a specif set of steps.
 
