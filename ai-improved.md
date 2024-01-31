@@ -126,5 +126,14 @@ The sample project used in this example can be found in the [Azion Samples](http
 5. If the user decides to deploy the project, they run the `azion deploy` command. This initiates the build process again, after which the Azion CLI creates an edge application and deploys it onto Azion's distributed edge network.
 6. Upon successful deployment, the Azion CLI provides the domain of the application. After a brief waiting period, the application becomes accessible.
 
+### Responsibilities 
+
+**Azion CLI**: This is the command-line interface that serves as the primary point of interaction between the user and the system. It manages the entire application deployment process, ensuring a smooth and efficient workflow.
+
+**Vulcan**: This is the engine that drives project initialization, building, and adaptation. It intelligently tailors the project based on the selected template, ensuring that the application is optimally configured for its intended use.
+
+**Azion Edge Runtime**: This is the runtime environment that hosts the application and manages its execution. The application is distributed through Azion's global network of Edge Nodes, ensuring that it is always close to its delivery point, thereby maximizing speed and efficiency.
+
+---
 
 By utilizing Azion's platform, developers can now enjoy a better deploying experience for web frameworks at the edge. Adapt your projects to run seamlessly while focusing on the core functionality rather than worrying about the specific environment. With Azion's Edge Runtime and Vulcan tool, developers gain the power to optimize their applications effectively, leveraging low latency, security, and availability at the edge of the network.
