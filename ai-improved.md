@@ -128,11 +128,11 @@ The sample project used in this example can be found in the [Azion Samples](http
 
 ### Responsibilities 
 
-**Azion CLI**: This is the command-line interface that serves as the primary point of interaction between the user and the system. It manages the entire application deployment process, ensuring a smooth and efficient workflow.
+**Azion CLI**: the command-line interface that serves as the primary point of interaction between the user and the system. It manages the entire application deployment process, ensuring a smooth and efficient workflow.
 
-**Vulcan**: This is the engine that drives project initialization, building, and adaptation. It intelligently tailors the project based on the selected template, ensuring that the application is optimally configured for its intended use.
+**Vulcan**: the engine that drives project initialization, building, and adaptation. It intelligently tailors the project based on the selected template, ensuring that the application is optimally configured for its intended use.
 
-**Azion Edge Runtime**: This is the runtime environment that hosts the application and manages its execution. The application is distributed through Azion's global network of Edge Nodes, ensuring that it is always close to its delivery point, thereby maximizing speed and efficiency.
+**Azion Edge Runtime**: the runtime environment that hosts the application and manages its execution. The application is distributed through Azion's global network of Edge Nodes, ensuring that it is always close to its delivery point, thereby maximizing speed and efficiency.
 
 ---
 
