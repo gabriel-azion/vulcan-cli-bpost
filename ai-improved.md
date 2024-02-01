@@ -1,4 +1,4 @@
-# Better Deploying Experience for Web Frameworks at the Edge
+# Next-Level Edge Deployment: Embracing Node.js Polyfills
 
 As developers, we are all familiar with the accelerated, ever-changing world of web frameworks. Sometimes, it can be confusing as excelling at using a specific framework requires a deeper understanding that goes beyond just knowing the programming language. One of the significant obstacles faced is configuring the project to run smoothly on different environments.
 
@@ -132,7 +132,7 @@ The sample project used in this example can be found in the [Azion Samples](http
 
 **Vulcan**: the engine that drives project initialization, building, and adaptation. It intelligently tailors the project based on the selected template, ensuring that the application is optimally configured for its intended use.
 
-**Azion Edge Runtime**: the runtime environment that hosts the application and manages its execution. The application is distributed through Azion's global network of Edge Nodes, ensuring that it is always close to its delivery point, thereby maximizing speed and efficiency.
+**Azion Edge Runtime**: the runtime environment that hosts the application and manages its execution. The application is distributed through Azion's global network of Edge Nodes, ensuring that it is always close to users, thereby maximizing speed and efficiency.
 
 ---
 
