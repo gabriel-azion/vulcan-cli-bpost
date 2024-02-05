@@ -107,7 +107,7 @@ Now, you can access the project locally.
 
 > Note: Make sure you are in the root directory of your project for the commands to execute correctly.
 
-The `azion dev` command initiates the **build process**, which is seamlessly handled by Vulcan.
+The `azion dev` command initiates the **build process**, which is seamlessly handled by Vulcan and return the port to access the project.
 
 The sample project used in this example can be found in the [Azion Samples](https://github.com/aziontech/azion-samples/tree/dev/samples/polyfills/buffer) repository on GitHub.
 
