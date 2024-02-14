@@ -1,4 +1,7 @@
-# Next-Level Edge Deployment: Embracing Node.js Polyfills
+# Next-Level Edge Deployment: Embracing Node.js Polyfills (1)
+# Unlock Effortless Edge Deployment with Vulcan and Node.js Polyfills (2)
+# Unlock Effortless Edge Deployment with Vulcan and Node.js Polyfills (3)
+
 
 As developers, we are all familiar with the accelerated, ever-changing world of web frameworks. Sometimes, it can be confusing as excelling at using a specific framework requires a deeper understanding that goes beyond just knowing the programming language. One of the significant obstacles faced is configuring the project to run smoothly on different environments.
 
