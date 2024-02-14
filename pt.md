@@ -4,7 +4,7 @@
 
 Como desenvolvedores, estamos familiarizados com o mundo acelerado e em constante mudança dos frameworks web. Às vezes, pode ser confuso, pois se destacar no uso de um framework específico requer um entendimento mais profundo que vai além de apenas conhecer a linguagem de programação. Um dos obstáculos significativos é configurar o projeto para funcionar perfeitamente em diferentes ambientes.
 
-Questões como "Isso vai funcionar na nuvem?" e "Em qual plataforma deve ser executado?" surgem frequentemente. Mas e se você pudesse implementar seu projeto na borda da rede, aproveitando a baixa latência, segurança e disponibilidade sem se preocupar com o ambiente específico? Este post explora o conceito de adaptar projetos para serem executados na borda e apresenta uma solução que simplifica o processo.
+Questões como "Isso vai funcionar na nuvem?" e "Em qual plataforma deve ser executado?" surgem frequentemente. Mas e se você pudesse implementar seu projeto no edge, aproveitando a baixa latência, segurança e disponibilidade sem se preocupar com o ambiente específico? Este post explora o conceito de adaptar projetos para serem executados na borda e apresenta uma solução que simplifica o processo.
 
 ## Adaptando Projetos para Execução na Borda
 
@@ -138,4 +138,4 @@ O projeto de exemplo usado neste exemplo pode ser encontrado no repositório [Az
 
 ---
 
-Ao utilizar a plataforma Azion, os desenvolvedores podem desfrutar de uma melhor experiência de implatação de frameworks web na borda. Adapte seus projetos para serem executados de maneira contínua enquanto se concentra na funcionalidade principal, em vez de se preocupar com o ambiente específico. Com o Runtime Edge da Azion e a ferramenta Vulcan, os desenvolvedores ganham o poder de otimizar seus aplicativos de maneira eficaz, aproveitando a baixa latência, segurança e disponibilidade na borda da rede.
+Ao utilizar a plataforma Azion, os desenvolvedores podem desfrutar de uma melhor experiência de implatação de frameworks web na borda. Adapte seus projetos para serem executados de maneira contínua enquanto se concentra na funcionalidade principal, em vez de se preocupar com o ambiente específico. Com o Runtime Edge da Azion e a ferramenta Vulcan, os desenvolvedores ganham o poder de otimizar seus aplicativos de maneira eficaz, aproveitando a baixa latência, segurança e disponibilidade no edge.
