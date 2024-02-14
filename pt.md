@@ -21,7 +21,7 @@ Na Azion, valorizamos o poder do software de código aberto e temos como objetiv
 - Vite
 - JavaScript em si
 
-A Azion fornece seu próprio [Runtime de Borda]() projetado para fornecer uma experiência ideal para executar aplicativos na borda. Este runtime alimenta as [Funções Edge da Azion]() e abre um mundo de possibilidades para desenvolvedores e empresas. Além disso, desenvolvemos o [Vulcan]() para preencher as lacunas e permitir que os frameworks web sejam executados nativamente na borda. O Vulcan simplifica a integração de *polyfills* para a Computação de Borda, revolucionando o processo de criação de Workers, especialmente para a plataforma Azion.
+A Azion fornece seu próprio [Edge Runtime]() projetado para fornecer uma experiência ideal para executar aplicativos na borda. Este runtime alimenta as [Edge Functions da Azion]() e abre um mundo de possibilidades para desenvolvedores e empresas. Além disso, desenvolvemos o [Vulcan]() para preencher as lacunas e permitir que os frameworks web sejam executados nativamente na borda. O Vulcan simplifica a integração de *polyfills* para a Computação de Borda, revolucionando o processo de criação de Workers, especialmente para a plataforma Azion.
 
 > Se você está curioso sobre o que são *polyfills*, são trechos de código usados no JavaScript para fornecer funcionalidades modernas aos ambientes que não oferecem suporte nativo. Os Polyfills preenchem as lacunas, garantindo um comportamento consistente entre diferentes navegadores. Por exemplo, vamos considerar um runtime que não oferece suporte a uma API específica do Node.js, na qual um projeto depende. Durante o processo de construção, o Vulcan reconhece a assinatura dessa API e a substitui por uma API relativa, eliminando a necessidade de adaptação manual do projeto.
 
@@ -32,19 +32,17 @@ O Vulcan se destaca na criação de um protocolo intuitivo e simplificado para a
 O [CLI da Azion]() é uma ferramenta excepcional que melhora muito a experiência do desenvolvedor. Com o CLI instalado em seu ambiente, iniciar um projeto é tão simples quanto executar o seguinte comando:
 
 ```bash
-azion
+azion init
 ```
-Este comando inicia uma jornada interativa onde você pode escolher o modelo desejado.
+Este comando inicia uma jornada interativa onde você pode escolher o *template* desejado.
 
-![Lista de Modelos Disponíveis](templates-list.png)
-
-Depois de selecionar o modelo, cada framework apresentará um conjunto específico de etapas. Escolha executar o projeto localmente e instale as dependências necessárias.
+Depois de selecionar o *template*, cada framework apresentará um conjunto específico de etapas. Escolha executar o projeto localmente e instale as dependências necessárias.
 
 ### Aproveitando Polyfills
 
-O Vulcan torna possível aproveitar os *polyfills*. Vamos dar uma olhada mais de perto em como configurar um projeto para utilizar esse recurso.
+O Vulcan torna possível o uso de *polyfills*. Vamos dar uma olhada mais de perto em como configurar um projeto para utilizar esse recurso.
 
-**Exemplo**: Suponha que você queira iniciar um projeto JavaScript que utiliza a API Buffer do Node.js. Para conseguir isso, você precisa informar ao Vulcan que o projeto implementa polyfills.
+**Exemplo**: Supondo que você queira iniciar um projeto JavaScript que utiliza a API Buffer do Node.js. Para conseguir isso, você precisa informar ao Vulcan que o projeto implementa polyfills.
 
 O Vulcan lê um arquivo de configuração chamado `vulcan.config.js`. Crie este arquivo e inclua as seguintes propriedades:
 
@@ -62,7 +60,7 @@ module.exports = {
 
 Depois de aplicar essas configurações, você pode importar as APIs necessárias para o seu projeto. Por exemplo, vamos considerar a importação do Buffer de Node.js:
 
-**Dentro do main.js**:
+**Dentro de main.js**:
 
 ```js
 // Importa a classe Buffer do módulo 'buffer' no Node.js
@@ -101,10 +99,6 @@ Para executar o projeto localmente, use o seguinte comando:
 azion dev
 ```
 
-**Saída**:
-
-![Saída do Azion Dev](azion-dev-output.png)
-
 Agora você pode acessar o projeto localmente.
 
 > Nota: Certifique-se de que está no diretório raiz do seu projeto para que os comandos sejam executados corretamente.
@@ -121,7 +115,7 @@ O projeto de exemplo usado neste exemplo pode ser encontrado no repositório [Az
 
 ### Processo explicado 
 
-1. O usuário inicia o processo executando `azion` ou `azion init` via CLI Azion e seleciona o modelo desejado.
+1. O usuário inicia o processo executando `azion` ou `azion init` via CLI Azion e seleciona o *template* desejado.
 2. CLI Azion, então, invoca o Vulcan, que se encarrega de inicializar o projeto.
 3. Uma vez inicializado, o Vulcan devolve o projeto ao usuário, que decide se implementa o projeto ou o executa localmente.
 4. Se o usuário optar por executar o projeto localmente, Vulcan dispara o processo de construção e gera o worker.
@@ -132,7 +126,7 @@ O projeto de exemplo usado neste exemplo pode ser encontrado no repositório [Az
 
 **CLI Azion**: a interface de linha de comando que serve como principal ponto de interação entre o usuário e o sistema. Gerencia todo o processo de implatação do aplicativo, garantindo um fluxo de trabalho suave e eficiente.
 
-**Vulcan**: o motor que impulsiona a inicialização do projeto, construção e adaptação. Adequa inteligentemente o projeto com base no modelo selecionado, garantindo que o aplicativo esteja otimamente configurado para o uso pretendido.
+**Vulcan**: o motor que impulsiona a inicialização do projeto, construção e adaptação. Adequa inteligentemente o projeto com base no *template* selecionado, garantindo que o aplicativo esteja otimamente configurado para o uso pretendido.
 
 **Runtime Edge Azion**: o ambiente de execução que hospeda o aplicativo e gerencia sua execução. O aplicativo é distribuído através da rede global de Nós Edge da Azion, garantindo que ele esteja sempre perto dos usuários, maximizando assim velocidade e eficiência.
 
