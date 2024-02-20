@@ -21,7 +21,7 @@ Na Azion, valorizamos o poder do software de código aberto e temos como objetiv
 - Vite
 - JavaScript em si
 
-A Azion fornece seu próprio [Edge Runtime]() projetado para fornecer uma experiência ideal para executar aplicativos no edge. Este runtime alimenta as [Edge Functions da Azion]() e abre um mundo de possibilidades para desenvolvedores e empresas. Além disso, desenvolvemos o [Vulcan]() para preencher as lacunas e permitir que os frameworks web sejam executados nativamente no edge. O Vulcan simplifica a integração de *polyfills* para Edge Computing, revolucionando o processo de criação de workers, especialmente para a plataforma Azion.
+A Azion fornece seu próprio [Edge Runtime](https://www.azion.com/pt-br/documentacao/devtools/runtime/visao-geral/) projetado para fornecer uma experiência ideal para executar aplicativos no edge. Este runtime alimenta as [Azion Edge Functions](https://www.azion.com/pt-br/documentacao/produtos/guias/edge-functions/primeiros-passos/) e abre um mundo de possibilidades para desenvolvedores e empresas. Além disso, desenvolvemos o [Vulcan](https://github.com/aziontech/vulcan) para preencher as lacunas e permitir que os frameworks web sejam executados nativamente no edge. O Vulcan simplifica a integração de *polyfills* para Edge Computing, revolucionando o processo de criação de workers, especialmente para a plataforma Azion.
 
 > Se você está curioso sobre o que são *polyfills*, são trechos de código usados no JavaScript para fornecer funcionalidades modernas aos ambientes que não oferecem suporte nativo. Os Polyfills preenchem as lacunas, garantindo um comportamento consistente entre diferentes navegadores. Por exemplo, vamos considerar um runtime que não oferece suporte a uma API específica do Node.js, na qual um projeto depende. Durante o processo de build, o Vulcan reconhece a assinatura dessa API e a substitui por uma API relativa, eliminando a necessidade de adaptação manual do projeto.
 
@@ -29,7 +29,7 @@ O Vulcan se destaca na criação de um protocolo intuitivo e simplificado para a
 
 ## Configurando um projeto
 
-A [Azion CLI]() é uma ferramenta excepcional que melhora muito a experiência do desenvolvedor. Com a CLI instalada em seu ambiente, inicializar um projeto é tão simples quanto executar o seguinte comando:
+A [Azion CLI](https://www.azion.com/pt-br/documentacao/produtos/azion-cli/visao-geral/) é uma ferramenta excepcional que melhora muito a experiência do desenvolvedor. Com a CLI instalada em seu ambiente, inicializar um projeto é tão simples quanto executar o seguinte comando:
 
 ```bash
 azion init

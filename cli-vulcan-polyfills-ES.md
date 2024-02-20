@@ -21,7 +21,7 @@ En Azion, valoramos el poder del software de código abierto y nuestro objetivo 
 - Vite
 - Y el propio JavaScript
 
-Azion proporciona su propio [Edge Runtime]() diseñado para ofrecer una experiencia óptima para ejecutar aplicaciones en el edge. Este tiempo de ejecución alimenta a las [Azion Edge Functions]() y abre un mundo de posibilidades tanto para los desarrolladores como para las empresas. Además, hemos desarrollado [Vulcan]() para cerrar las brechas y permitir que los frameworks web se ejecuten de forma nativa en el edge. Vulcan simplifica la integración de *polyfills* para edge computing, revolucionando el proceso de creación de Workers, especialmente para la plataforma Azion.
+Azion proporciona su propio [Edge Runtime](https://www.azion.com/en/documentation/devtools/runtime/overview/) diseñado para ofrecer una experiencia óptima para ejecutar aplicaciones en el edge. Este tiempo de ejecución alimenta a las [Azion Edge Functions](https://www.azion.com/en/documentation/products/guides/edge-functions/first-steps/) y abre un mundo de posibilidades tanto para los desarrolladores como para las empresas. Además, hemos desarrollado [Vulcan](https://github.com/aziontech/vulcan) para cerrar las brechas y permitir que los frameworks web se ejecuten de forma nativa en el edge. Vulcan simplifica la integración de *polyfills* para edge computing, revolucionando el proceso de creación de Workers, especialmente para la plataforma Azion.
 
 > Los *polyfills*, son fragmentos de código utilizados en JavaScript para proporcionar funcionalidades modernas a los entornos que no las soportan de forma nativa. Los polyfills llenan esas brechas, lo que proporciona un comportamiento consistente en diferentes navegadores. Por ejemplo, consideremos un tiempo de ejecución que carece de soporte para una API específica de Node.js, de la cual depende un proyecto. Durante el proceso de creación o build, Vulcan reconoce la firma de esta API y la reemplaza con una API relativa, lo que elimina la necesidad de adaptar el proyecto manualmente.
 
@@ -29,7 +29,7 @@ Vulcan destaca con la configuración de un protocolo intuitivo y simplificado pa
 
 ## Configurando un proyecto
 
-La [CLI de Azion]() es una herramienta excepcional que mejora la experiencia del desarrollador. Con la CLI instalada en tu entorno, solo tendrás que ejecutar el siguiente comando para inicializar un proyecto:
+La [CLI de Azion](https://www.azion.com/en/documentation/products/azion-cli/overview/) es una herramienta excepcional que mejora la experiencia del desarrollador. Con la CLI instalada en tu entorno, solo tendrás que ejecutar el siguiente comando para inicializar un proyecto:
 
 ```bash
 azion
