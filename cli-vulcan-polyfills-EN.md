@@ -1,6 +1,6 @@
 # Next-Level Edge Deployment: Embracing Node.js Polyfills (1)
-# Unlock Effortless Edge Deployment with Vulcan and Node.js Polyfills (2)
 # Unlock Effortless Edge Deployment with Vulcan and Node.js Polyfills (3)
+# Better deploying experience for web frameworks at the edge
 
 
 As developers, we are all familiar with the accelerated, ever-changing world of web frameworks. Sometimes, it can be confusing as excelling at using a specific framework requires a deeper understanding that goes beyond just knowing the programming language. One of the significant obstacles faced is configuring the project to run smoothly on different environments.
@@ -36,8 +36,6 @@ The [Azion CLI]() is an outstanding tool that greatly enhances the developer exp
 azion
 ```
 This command initiates an interactive journey where you can choose the desired template.
-
-![List of Available Templates](templates-list.png)
 
 Once you've selected the template, each framework will present a specific set of steps. Choose to run the project locally and install the required dependencies.
 

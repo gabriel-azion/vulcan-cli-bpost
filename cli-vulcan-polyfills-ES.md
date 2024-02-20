@@ -34,9 +34,8 @@ La [CLI de Azion]() es una herramienta excepcional que mejora la experiencia del
 ```bash
 azion
 ```
-Este comando inicia una jornada interactiva donde puedes elegir el template deseado.
 
-![Listado de Templates Disponibles](templates-list.png)
+Este comando inicia una jornada interactiva donde puedes elegir el template deseado.
 
 Una vez que hayas seleccionado el template, cada framework presentará un conjunto específico de pasos. Elige ejecutar el proyecto localmente e instala las dependencias requeridas.
 
