@@ -1,5 +1,8 @@
 # Atinja o próximo nível na implatação Edge: adotando Polyfills do Node.js (1)
 # Faça a implatação no edge sem esforço com Vulcan e Polyfills (2)
+# Implantação no Edge Sem Esforço com Vulcan e Polyfills do Node.js //Favorite
+# Exeperiência de implatação otimizada no edge
+
 # Exeperiência de implatação otimizada no edge
 
 Como desenvolvedores, estamos familiarizados com o mundo acelerado e em constante mudança dos frameworks web. Às vezes, pode ser confuso, pois se destacar no uso de um framework específico requer um entendimento mais profundo que vai além de apenas conhecer a linguagem de programação. Um dos obstáculos significativos é configurar o projeto para funcionar perfeitamente em diferentes ambientes.

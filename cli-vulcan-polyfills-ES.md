@@ -1,5 +1,5 @@
 Texto: # Implementación avanzada en el edge: adoptando los polyfills de Node.js (1)
-# Obtén una implementación sencilla en el edge con Vulcan y los polyfills de Node.js (2)
+# Obtén una implementación sencilla en el edge con Vulcan y los polyfills de Node.js (2) // Favorite
 # Implementa en el edge de forma sencilla con Vulcan y los polyfills de Node.js (3)
 
 Como desarrolladores, estamos familiarizados con el mundo acelerado y en constante cambio de los frameworks web. A veces, puede ser confuso ya que destacarse en el uso de un framework específico requiere una comprensión profunda que va más allá de saber solo el lenguaje de programación. En este sentido, configurar el proyecto para que se ejecute sin problemas en diferentes entornos es uno de los más grandes obstáculos que se debe enfrentar.
